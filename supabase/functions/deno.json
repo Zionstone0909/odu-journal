@@ -1,0 +1,14 @@
+{
+  "imports": {
+    "@supabase/supabase-js": "https://esm.sh/@supabase/supabase-js@2"
+  },
+  "tasks": {
+    "test": "deno test --allow-all"
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"],
+      "exclude": ["no-unused-vars"]
+    }
+  }
+}

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 25 15% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 25 15% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 25 15% 12%;
+
+    /* Bronze/brown from logo */
+    --primary: 25 55% 25%;
+    --primary-foreground: 40 30% 95%;
+
+    --secondary: 35 70% 50%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 30 20% 95%;
+    --muted-foreground: 25 10% 46%;
+
+    --accent: 35 70% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 15% 88%;
+    --input: 30 15% 88%;
+    --ring: 25 55% 25%;
+
+    --radius: 0.25rem;
+
+    /* Custom tokens */
+    --header-bg: 25 45% 14%;
+    --header-foreground: 40 30% 95%;
+    --hero-bg: 35 25% 92%;
+    --hero-foreground: 25 15% 12%;
+    --nav-bar-bg: 0 0% 100%;
+    --nav-bar-border: 30 15% 88%;
+    --sidebar-card-bg: 35 30% 95%;
+    --link-color: 25 60% 30%;
+    --cta-bg: 35 75% 48%;
+    --cta-foreground: 0 0% 100%;
+
+    --font-heading: 'Merriweather', Georgia, serif;
+    --font-body: 'Source Sans 3', 'Helvetica Neue', Arial, sans-serif;
+
+    --sidebar-background: 30 15% 98%;
+    --sidebar-foreground: 25 10% 26%;
+    --sidebar-primary: 25 45% 14%;
+    --sidebar-primary-foreground: 40 30% 95%;
+    --sidebar-accent: 30 15% 96%;
+    --sidebar-accent-foreground: 25 10% 26%;
+    --sidebar-border: 30 13% 91%;
+    --sidebar-ring: 25 55% 40%;
+  }
+
+  .dark {
+    --background: 25 12% 10%;
+    --foreground: 35 20% 88%;
+
+    --card: 25 12% 14%;
+    --card-foreground: 35 20% 88%;
+
+    --popover: 25 12% 14%;
+    --popover-foreground: 35 20% 88%;
+
+    --primary: 35 55% 45%;
+    --primary-foreground: 25 12% 10%;
+
+    --secondary: 35 60% 40%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 25 10% 18%;
+    --muted-foreground: 30 15% 60%;
+
+    --accent: 35 60% 40%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 25 10% 22%;
+    --input: 25 10% 22%;
+    --ring: 35 55% 45%;
+
+    --header-bg: 25 15% 8%;
+    --header-foreground: 35 25% 90%;
+    --hero-bg: 25 12% 14%;
+    --hero-foreground: 35 20% 88%;
+    --nav-bar-bg: 25 12% 12%;
+    --nav-bar-border: 25 10% 22%;
+    --sidebar-card-bg: 25 10% 16%;
+    --link-color: 35 60% 55%;
+    --cta-bg: 35 65% 42%;
+    --cta-foreground: 0 0% 100%;
+
+    --sidebar-background: 25 12% 12%;
+    --sidebar-foreground: 30 15% 75%;
+    --sidebar-primary: 35 55% 45%;
+    --sidebar-primary-foreground: 25 12% 10%;
+    --sidebar-accent: 25 10% 18%;
+    --sidebar-accent-foreground: 30 15% 75%;
+    --sidebar-border: 25 10% 22%;
+    --sidebar-ring: 35 55% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
